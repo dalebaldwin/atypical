@@ -1,0 +1,21 @@
+{
+  "name": "atypical",
+  "version": "1.0.0",
+  "description": "Atypical Website",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "s3Sync": "aws s3 sync public s3://atypical-static-resources",
+    "start": "stage=dev serverless offline start"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless-offline": "^5.12.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "serverless-http": "^2.3.2"
+  }
+}
