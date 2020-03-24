@@ -1,7 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Merriweather+Sans|Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans|Merriweather:300|Montserrat:600&display=swap');
 
 /*
 font-family: 'Montserrat', sans-serif;
 font-family: 'Merriweather Sans', sans-serif;
-font-family: 'Bebas Neue', cursive;
+font-family: 'Merriweather', serif;
 */
+
+body {
+    color: #565656;
+    font-family: 'Merriweather', serif;
+}

@@ -5,12 +5,14 @@
   "main": "handler.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src",
     "s3Sync": "aws s3 sync public s3://atypical-static-resources",
     "start": "stage=dev serverless offline start"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^6.8.0",
     "serverless-offline": "^5.12.1"
   },
   "dependencies": {
