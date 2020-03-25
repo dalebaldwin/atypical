@@ -8,5 +8,51 @@ font-family: 'Merriweather', serif;
 
 body {
     color: #565656;
+    font-family: 'Merriweather Sans', sans-serif;
+    background: #fff;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4.5rem;
+}
+
+h2{
     font-family: 'Merriweather', serif;
+    font-size: 2.250rem;
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 30px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.body-container {
+    display: block;
+    background: #f8f8f8;
+    margin-bottom: 80px;
+}
+
+.navbar {
+    height: 80px;
+}
+
+.navbar img {
+    max-width: 110px;
+}
+
+.thick-line {
+    height: 4px;
+    background: #565656;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1440px;
+    }
 }
