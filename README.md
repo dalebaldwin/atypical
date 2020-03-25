@@ -7,3 +7,15 @@ If you are a recruiter or looking to hire me and wondering why this is in Bootst
 Design files are below.
 
 https://www.figma.com/file/CDNjjKZbzddpcbbY016qwL/Atypical?node-id=0%3A1
+
+### Why this isn't a SPA
+
+This isn't a SPA for a couple of reasons.
+
+Firstly cause I just needed a break from creating things in React and Vue. 
+
+Secondly I wanted to explore Serverless and building sites using a serverless architecture. 
+
+Thirdly I wanted good SEO and I'm not convinced a SPA can deliver that yet. 
+
+Fourth simplicity, this site isn't complicated it didn't need a SPA with SSR and code splitting, simple handlebars, a lambda, s3 bucket, SaaS CMS and Cloudfront is already quite a few bits and pieces.

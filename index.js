@@ -10,7 +10,7 @@ app.set('view engine', '.hbs')
 
 app.get('/', async (req, res) => {
   const data = await homeData()
-  console.log(data)
+  console.log(data.body[0])
   res.render('pages/home', {
     data: {
       env: process.env.NODE_ENV, 
