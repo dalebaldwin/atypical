@@ -2,5 +2,18 @@
     <div class="col-sm">
         <h3>{{data.primary.card_block_title.[0].text}}</h3>
     </div>
-    
 </div>
+{{#each data.items}}
+    {{{oddRowInject @index}}}
+    <div class="col-sm col-md-6 my-5">
+        <div class="card">
+            <img class="card-img-top" src="{{prismicImageHandlerCard this.card_image.url}}" alt="Card image cap">
+            <div class="card-body p-5">
+                <h4 class="mb-5">{{this.card_title.[0].text}}</h4>
+                {{{prismicRichText this.card_text}}}
+                {{!-- <a href="#" class="btn btn-primary">Go somewhere</a> --}}
+            </div>
+        </div>
+    </div>
+    {{{evenRowInjectClose @index}}}
+{{/each}}

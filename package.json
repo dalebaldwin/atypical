@@ -8,8 +8,8 @@
     "lint": "eslint src",
     "s3Sync": "aws s3 sync public s3://atypical-static-resources --acl public-read",
     "start": "stage=dev serverless offline start",
-    "deploy:dev": "sls deploy --stage develop",
-    "deploy:prod": "sls deploy --stage production"
+    "deploy:dev": "yarn lint && sls deploy --stage develop && yarn s3Sync",
+    "deploy:prod": "yarn lint && sls deploy --stage production && yarn s3Sync"
   },
   "author": "",
   "license": "ISC",

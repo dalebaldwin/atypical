@@ -17,9 +17,17 @@ h1 {
     font-size: 4.5rem;
 }
 
-h2{
+h2 {
     font-family: 'Merriweather', serif;
     font-size: 2.250rem;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+    font-family: 'Merriweather', serif;
 }
 
 p {
@@ -55,4 +63,17 @@ img {
     .container{
         max-width: 1440px;
     }
+
+    .row > [class*="col-"]:nth-child(odd) {
+        padding-right: 3rem;
+    }
+        
+    .row > [class*="col-"]:nth-child(even) {
+        padding-left: 3rem;
+    }
+
+    .card {
+        height: 100%;
+    }
 }
+

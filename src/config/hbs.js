@@ -14,9 +14,26 @@ const prismicRichText = (text) => {
     return string
 }
 
-const prismicImageHandler = (url) => {
+const prismicImageHandlerBody = (url) => {
     const string = `${url}&fit=crop&w=600&h=300`
     return string
+}
+
+const prismicImageHandlerCard = (url) => {
+    const string = `${url}&fit=crop&w=600&h=250`
+    return string
+}
+
+const oddRowInject = (val) => {
+    if ((val+1) % 2 !== 0) {
+        return `<div class="row">`
+    }
+}
+
+const evenRowInjectClose = (val) => {
+    if ((val+1) % 2 === 0) {
+        return `</div>`
+    }
 }
 
 const hbs = expressHbs.create({
@@ -25,7 +42,10 @@ const hbs = expressHbs.create({
   helpers: {
     setCSS,
     prismicRichText,
-    prismicImageHandler
+    prismicImageHandlerBody,
+    prismicImageHandlerCard,
+    oddRowInject,
+    evenRowInjectClose
   }
 });
 
